@@ -1,6 +1,6 @@
 # Atlas Search Workshop
 
-MongoFlix - interactive demo for [MongoDB Atlas Search](https://www.mongodb.com/atlas/search), [MongoDB Realm](https://www.mongodb.com/realm), [GraphQL](https://docs.mongodb.com/realm/graphql/) and so much more.
+MongoFlix - interactive demo for [Atlas Search](https://www.mongodb.com/atlas/search), [Atlas App Services](https://www.mongodb.com/atlas/app-services), [GraphQL](https://docs.mongodb.com/realm/graphql/) and so much more.
 
 ## Live Demo
 
