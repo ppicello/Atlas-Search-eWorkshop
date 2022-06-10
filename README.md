@@ -6,7 +6,7 @@ MongoFlix - interactive demo for [Atlas Search](https://www.mongodb.com/atlas/se
 
 [This is what we will build!](https://atlas-search-mongoflix-git-prod-node-artemadams.vercel.app/)
 
-[Also available on Realm as a static site!](https://application-0-kjasg.mongodbstitch.com/)
+[Also available on Atlas App Services as a static site!](https://application-0-kjasg.mongodbstitch.com/)
 
 ## Code with us
 
@@ -18,9 +18,9 @@ Open the project live on [StackBlitz](http://stackblitz.com/):
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/artemadams/atlas-search-mongoflix)
 
 Duplicate the file `.env.local.example-add-app-id-here` and name it: `.env.local`.
-You will need to change the `<APP_ID>` value to the app id of your MongoDB Realm app, which will be created at a later step.
-You have also to update the `NEXT_PUBLIC_REALM_BASE_URL` value if you have a different base URL for your MongoDB Realm app.
-This value will depend on the deployment region of your MongoDB Realm app.
+You will need to change the `<APP_ID>` value to the app id of your Atlas app, which will be created at a later step.
+You have also to update the `NEXT_PUBLIC_REALM_BASE_URL` value if you have a different base URL for your Atlas app.
+This value will depend on the deployment region of your Atlas app.
 
 # Agenda
 
@@ -146,7 +146,7 @@ To create the app click **Create App Service**.
 
 ![Create Realm App Step 2](/docs/create-realm-app-config.png?raw=true "Create Realm App Step 2")
 
-_Hint:_ Now with the app created you can update the `.env.local` file to include the **App ID** value from your Realm app.
+_Hint:_ Now with the app created you can update the `.env.local` file to include the **App ID** value from your Atlas app.
 
 ![Copy Realm App ID](/docs/appID.png?raw=true "Copy Realm App ID")
 
@@ -603,7 +603,7 @@ In your cluster on **Atlas** in the **Search** tab, create a new index with the 
 
 ### Create Facets Function
 
-Now with the index created, in the **Atlas** UI click the **Realm** tab. Click **Application-0** in the UI. On the left side bar of the Atlas UI, within **Build**, click **Functions**.
+Now with the index created, in the **Atlas** UI click the **App Services** tab. Click **Application-0** in the UI. On the left side bar of the Atlas UI, within **Build**, click **Functions**.
 Click the **Create New Function** button and enter `facetsGenres` as the name for the function.
 
 ![Create Facets Function](/docs/create-func-facets-config.png?raw=true "Create Facets Function")
@@ -719,7 +719,7 @@ Now with the facets setup test the app and open the dropdown for **Genres**. Not
 
 **Atlas App Services Hosting** allows you to host, manage, and serve your application's static media and document files. You can use Hosting to store individual pieces of content or to upload and serve your entire client application.
 
-Our frontend app contains all the necessary calls to the GraphQL API on Realm. We can export the whole frontend app as a static site and host it on MongoDB Realm.
+Our frontend app contains all the necessary calls to the GraphQL API. We can export the whole frontend app as a static site and host it on MongoDB App Services.
 
 For this you need to execute the follwing code in the root folder of the project.
 Make sure that you have the dependencies installed with.
