@@ -131,47 +131,53 @@ Enter the following querry to find all movies containing the text `time` in any 
 In the **Atlas** UI click the **App Services** tab at the top. If you are using Atlas App Services for the first time, you will see a dialog with additonal instructions. You can safely select **Build your own App** it and click the **Next**.
 The information should be populated automatically. Make sure to use the same name for simplicity.
 
-![Create Realm App Step 1](/docs/create-realm-app-welcome.png?raw=true "Create Realm App Step 1")
+![Create Realm App Step 1](/docs/welcome-atlas-app-services.png?raw=true "Create Realm App Step 1")
 
-In the following dialog, setup the name of the Realm App, connect it to your newly created cluster and select a local (single region) deployment model. It should be preferable to use the region closest to your cluster region.
+
+![Create Realm App Step 1.2](/docs/welcome-atlas-app-services.png?raw=true "Create Realm App Step 1.2")
+
+In the following dialog, setup the name of the App, connect it to your newly created cluster and select a local (single region) deployment model. It should be preferable to use the region closest to your cluster region.
 
 -   Name: Application-0
 -   Cluster: Cluster0
 -   Deployment Model: Local
 
-To create the app click **Create Realm Application**.
+To create the app click **Create App Service**.
 
 ![Create Realm App Step 2](/docs/create-realm-app-config.png?raw=true "Create Realm App Step 2")
 
 _Hint:_ Now with the app created you can update the `.env.local` file to include the **App ID** value from your Realm app.
 
-![Copy Realm App ID](/docs/realm-app-id.png?raw=true "Copy Realm App ID")
+![Copy Realm App ID](/docs/appID.png?raw=true "Copy Realm App ID")
 
 <a id="RealmActivateAnonymousAuthentication"></a>
 
-### Realm Activate Anonymous Authentication
+### App Services Activate Anonymous Authentication
 
-On the left side bar of the Atlas UI, within **Data Access**, click **Authentication**. As you see **Realm** provides many authentication methods, we will use **Anonymous** for this demo. Click on the **Edit** button and set the checkbox to **ON** for this authentication method.
+On the left side bar of the Atlas UI, within **Data Access**, click **Authentication**. As you see **App Services** provides many authentication methods, we will use **Anonymous** for this demo. Click on the **Edit** button and set the checkbox to **ON** for this authentication method.
 
-![Realm Activate Anonymous Authentication](/docs/add-auth.png?raw=true "Realm Activate Anonymous Authentication")
+![Realm Activate Anonymous Authentication](/docs/authentication.png?raw=true "Realm Activate Anonymous Authentication")
 
 <a id="RealmConfigureAccessRules"></a>
 
-### Realm Configure Access Rules
+### App Services Configure Access Rules
 
-On the left side bar of the Atlas UI, within **Data Access**, click **Rules**. **Rules** provide you many ways to limit and configure data access per collection and user role, deep down to the document level. For this demo we will allow all users to only `read` all documents in the movies colelction. **Realm** provides templates for many scenarios and we will use the **Users can only read all data** template.
+On the left side bar of the Atlas UI, within **Data Access**, click **Rules**. **Rules** provide you many ways to limit and configure data access per collection and user role, deep down to the document level. For this demo we will allow all users to only `read` all documents in the movies colelction. **App Services** provides templates for many scenarios and we will use the **Users can only read all data** template.
 
 ![Realm Configure Access Rules](/docs/add-rules-movies.png?raw=true "Realm Configure Access Rules")
 
 <a id="RealmGenerateSchema"></a>
 
-### Realm Generate Schema
+### App Services Generate Schema
 
 On the left side bar of the Atlas UI, within **Data Access**, click **Schema**. **Schema** defines the data structures and types for documents in each collection in the databases. Select the **movies** collection within the **sample_mflix** database. Click the generate schema button.
 Select just the **movies** collection, leave the samling size as default and click the **Generate Schema** button.
 This will also generate all the neccessary types and queries for a **GraphQL** schema. Which can be used immediately to access the data through the GraphQL endpoint managed by Realm.
 
-![Realm Generate Schema](/docs/create-schema-movies.png?raw=true "Realm Generate Schema")
+![Realm Generate Schema](/docs/create-schema.png?raw=true "Realm Generate Schema")
+
+
+![Realm Generate Schema](/docs/create-schema2.png?raw=true "Realm Generate Schema")
 
 Click the **Review Draft & Deploy** button at the top of the page and **Deploy** your changes.
 
@@ -179,7 +185,7 @@ Click the **Review Draft & Deploy** button at the top of the page and **Deploy**
 
 ![Deploy](/docs/hint-review-deploy.png?raw=true "Deploy")
 
-_Hint:_ Now with the schema generated you can update the `.env.local` file to include the following base URL from your Realm app.
+_Hint:_ Now with the schema generated you can update the `.env.local` file to include the following base URL from your App Services app.
 
 ![Copy Realm Base URL](/docs/realm-base-url.png?raw=true "Copy Realm Base URL")
 
