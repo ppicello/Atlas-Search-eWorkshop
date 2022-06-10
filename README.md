@@ -171,8 +171,8 @@ On the left side bar of the Atlas UI, within **Data Access**, click **Rules**. *
 ### App Services Generate Schema
 
 On the left side bar of the Atlas UI, within **Data Access**, click **Schema**. **Schema** defines the data structures and types for documents in each collection in the databases. Select the **movies** collection within the **sample_mflix** database. Click the generate schema button.
-Select just the **movies** collection, leave the samling size as default and click the **Generate Schema** button.
-This will also generate all the neccessary types and queries for a **GraphQL** schema. Which can be used immediately to access the data through the GraphQL endpoint managed by Realm.
+Select just the **movies** collection, leave the sampling size as default and click the **Generate Schema** button.
+This will also generate all the neccessary types and queries for a **GraphQL** schema. Which can be used immediately to access the data through the GraphQL endpoint managed by App Services.
 
 ![Realm Generate Schema](/docs/schema.png?raw=true "Realm Generate Schema")
 
@@ -211,13 +211,13 @@ query {
 ## Feature 1: Autocomplete
 
 Now with the correct rules and schema in place we can start creating functions for the app.
-For the first feature we will create a function that will return a list of movies that match the search term by the title. It will use our dynamic index created in the previous step with the autocomplete functionality. This enables us to provide autocomplete and fuzzy search for movie tiltes in the search bar of the frontend app.
+For the first feature we will create a function that will return a list of movies that match the search term by the title. It will use our dynamic index created in the previous step with the autocomplete functionality. This enables us to provide autocomplete and fuzzy search for movie titles in the search bar of the frontend app.
 
 <a id="CreateAutocompleteFunction"></a>
 
 ### Create Autocomplete Function
 
-On the left side bar of the Atlas UI, within **Build**, click **Functions**. **Functions** provide a way to execute serverside logic on **Realm** integrating data from the connected cluster. With the **Aggregation Framework** at your disposal you can create very powerful aggregations, even without a driver.
+On the left side bar of the Atlas UI, within **Build**, click **Functions**. **Functions** provide a way to execute server-side logic on **App Services** integrating data from the connected cluster. With the **Aggregation Framework** at your disposal you can create very powerful aggregations, even without a driver.
 
 Click the **Create New Function** button and enter `autocompleteTitle` as the name for the function.
 
@@ -266,11 +266,11 @@ Click the **Save Draft** button to save the function.
 
 ### Create Autocomplete Custom Resolver
 
-We want to use the autocomplete function in our GraphQL schema. To do this we need to create a custom resolver. Custom resolvers allow us to define custom queries and mutations for our GraphQL schema, backed by **Functions** created on Realm.
+We want to use the autocomplete function in our GraphQL schema. To do this we need to create a custom resolver. Custom resolvers allow us to define custom queries and mutations for our GraphQL schema, backed by **Functions** created on Atlas App Services.
 
 On the left side bar of the Atlas UI, within **Build**, click **GraphQL**. Click the **Custom Resolvers** tab and click the **Add a Custom Resolver** button. For the **GraphQL Field Name** enter `autocompleteTitle`, for the **Parent Type** select **Query** and for the **Function Name** select the newly created function `autocompleteTitle`.
 
-The input type defines the data type of what will be send to the GraphQL API as input for this resolver.
+The input type defines the data type of what will be sent to the GraphQL API as input for this resolver.
 The return type defines the data type of what will be returned by the API.
 We will send a string as input and expect a list of movie objects as output.
 
@@ -284,7 +284,7 @@ We will send a string as input and expect a list of movie objects as output.
 
 Click the **Save Draft** button to save the custom resolver.
 
-![Create Autocomplete Custom Resolver](/docs/create-func-autocomplete-resolver.png?raw=true "Create Autocomplete Custom Resolver")
+![Create Autocomplete Custom Resolver](/docs/autocomplete-resolver.png?raw=true "Create Autocomplete Custom Resolver")
 
 Click the **Review Draft & Deploy** button at the top of the page and **Deploy** your changes.
 
