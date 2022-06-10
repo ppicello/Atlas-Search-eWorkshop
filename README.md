@@ -715,13 +715,13 @@ Now with the facets setup test the app and open the dropdown for **Genres**. Not
 
 <a id="RealmStaticSiteHosting"></a>
 
-## Realm Static Site Hosting
+## Atlas App Services Static Site Hosting
 
-**MongoDB Realm Hosting** allows you to host, manage, and serve your application's static media and document files. You can use Hosting to store individual pieces of content or to upload and serve your entire client application.
+**Atlas App Services Hosting** allows you to host, manage, and serve your application's static media and document files. You can use Hosting to store individual pieces of content or to upload and serve your entire client application.
 
 Our frontend app contains all the necessary calls to the GraphQL API on Realm. We can export the whole frontend app as a static site and host it on MongoDB Realm.
 
-For this you need to execute the follwing code in the root folfder of the project.
+For this you need to execute the follwing code in the root folder of the project.
 Make sure that you have the dependencies installed with.
 
 ```bash
@@ -736,7 +736,7 @@ and then build and export the site with an npm script using nextjs.
 
 This will create a folder called `out` in the root folder of the project.
 
-On the MongoDB Atlas UI on the **Realm** tab. On the left side bar of the Atlas UI, within **Manage**, click **Hosting**. Click the _Enable Hosting_ button. Drag and drop the contents of the folder `out` into the **Hosting** tab to upload all files.
+On the MongoDB Atlas UI on the **App Services** tab. On the left side bar of the Atlas UI, within **Manage**, click **Hosting**. Click the _Enable Hosting_ button. Drag and drop the contents of the folder `out` into the **Hosting** tab to upload all files.
 
 Click the **Review Draft & Deploy** button at the top of the page and **Deploy** your changes.
 
@@ -744,4 +744,4 @@ Click the **Review Draft & Deploy** button at the top of the page and **Deploy**
 
 ![Deploy](/docs/hint-review-deploy.png?raw=true "Deploy")
 
-Click now the **Settings** tab copy the **Realm Domain** paste it in a browser of your choice and press enter to view the site. 🎉
+Click now the **Settings** tab copy the **App Services Domain** paste it in a browser of your choice and press enter to view the site. 🎉
