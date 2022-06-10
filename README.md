@@ -128,7 +128,7 @@ Enter the following querry to find all movies containing the text `time` in any 
 
 ## Create Atlas App Services app
 
-In the **Atlas** UI click the **App Services** tab at the top. If you are using Atlas App Services for the first time, you will see a dialog with additonal instructions. You can safely select **Build your own App** it and click the **Next**, then select **Build your own App** and click **next**.
+In the **Atlas** UI click the **App Services** tab at the top. If you are using Atlas App Services for the first time, you will see a dialog with additonal instructions. You can safely select **Build your own App** it and click the **Next**, then select **Build your own App** and click **Next**.
 The information should be populated automatically. Make sure to use the same name for simplicity.
 
 ![Create Realm App Step 1](/docs/welcome-atlas-app-services.png?raw=true "Create Realm App Step 1")
@@ -174,10 +174,10 @@ On the left side bar of the Atlas UI, within **Data Access**, click **Schema**. 
 Select just the **movies** collection, leave the samling size as default and click the **Generate Schema** button.
 This will also generate all the neccessary types and queries for a **GraphQL** schema. Which can be used immediately to access the data through the GraphQL endpoint managed by Realm.
 
-![Realm Generate Schema](/docs/create-schema.png?raw=true "Realm Generate Schema")
+![Realm Generate Schema](/docs/schema.png?raw=true "Realm Generate Schema")
 
 
-![Realm Generate Schema](/docs/create-schema2.png?raw=true "Realm Generate Schema")
+![Realm Generate Schema](/docs/schema2.png?raw=true "Realm Generate Schema")
 
 Click the **Review Draft & Deploy** button at the top of the page and **Deploy** your changes.
 
