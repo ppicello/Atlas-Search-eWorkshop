@@ -128,7 +128,7 @@ Enter the following querry to find all movies containing the text `time` in any 
 
 ## Create Atlas App Services app
 
-In the **Atlas** UI click the **App Services** tab at the top. If you are using Atlas App Services for the first time, you will see a dialog with additonal instructions. You can safely select **Build your own App** it and click the **Next**.
+In the **Atlas** UI click the **App Services** tab at the top. If you are using Atlas App Services for the first time, you will see a dialog with additonal instructions. You can safely select **Build your own App** it and click the **Next**, then select **Build your own App** and click **next**.
 The information should be populated automatically. Make sure to use the same name for simplicity.
 
 ![Create Realm App Step 1](/docs/welcome-atlas-app-services.png?raw=true "Create Realm App Step 1")
