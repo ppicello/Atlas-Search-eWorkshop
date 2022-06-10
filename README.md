@@ -30,7 +30,7 @@ This value will depend on the deployment region of your MongoDB Realm app.
 1. [Atlas Cluster](#AtlasCluster)
     1. [Load Sample Data](#LoadSampleData)
 1. [Atlas Search Index Creation](#AtlasSearchIndexCreation)
-1. [Create Realm App](#CreateRealmApp)
+1. [Create Atlas App Service app](#CreateRealmApp)
     1. [Realm Activate Anonymous Authentication](#RealmActivateAnonymousAuthentication)
     1. [Realm Configure Access Rules](#RealmConfigureAccessRules)
     1. [Realm Generate Schema](#RealmGenerateSchema)
@@ -126,9 +126,9 @@ Enter the following querry to find all movies containing the text `time` in any 
 
 <a id="CreateRealmApp"></a>
 
-## Create Realm App
+## Create Atlas App Service app
 
-In the **Atlas** UI click the **Realm** tab at the top. If you are using Realm for the first time, you will see a dialog with additonal instructions. You can safely select **Build your own App** it and click the **Next**.
+In the **Atlas** UI click the **App Services** tab at the top. If you are using Realm for the first time, you will see a dialog with additonal instructions. You can safely select **Build your own App** it and click the **Next**.
 The information should be populated automatically. Make sure to use the same name for simplicity.
 
 ![Create Realm App Step 1](/docs/create-realm-app-welcome.png?raw=true "Create Realm App Step 1")
