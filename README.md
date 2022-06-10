@@ -86,15 +86,13 @@ Click **Load Sample Dataset**. Click the **Load Sample Dataset** button in the o
 
 ## Atlas Search Index Creation
 
-Click the Cluster name to open it. In your cluster on **Atlas** click the **Search** tab. Click the **Create Search Index** button to create an index.
+Click the Cluster name to open it. In your cluster on **Atlas** click the **Search** tab. Click the **Create Index** button to create an index.
 
 1. Select the JSON editor and click **Next**.
 1. In the **Database and Collection** sidebar select `sample_mflix` and select `movies`.
 1. For the name leave it as `default` and paste the following JSON.
 1. Click **Next**.
 1. After reviewing it, click **Create Search Index**.
-
-![Atlas Search First Index](/docs/add-index-autocomplete.png?raw=true "Atlas Search First Index")
 
 ```json
 {
@@ -115,6 +113,8 @@ Click the Cluster name to open it. In your cluster on **Atlas** click the **Sear
 }
 ```
 
+![Atlas Search First Index](/docs/add-index-autocomplete.png?raw=true "Atlas Search First Index")
+
 The index creation should take less tha a minute.
 Lets test it, to verify that it works.
 Still in the **Search** tab, click the **Query** button besides the newly created index.
@@ -126,9 +126,9 @@ Enter the following querry to find all movies containing the text `time` in any 
 
 <a id="CreateRealmApp"></a>
 
-## Create Atlas App Service app
+## Create Atlas App Services app
 
-In the **Atlas** UI click the **App Services** tab at the top. If you are using Realm for the first time, you will see a dialog with additonal instructions. You can safely select **Build your own App** it and click the **Next**.
+In the **Atlas** UI click the **App Services** tab at the top. If you are using Atlas App Services for the first time, you will see a dialog with additonal instructions. You can safely select **Build your own App** it and click the **Next**.
 The information should be populated automatically. Make sure to use the same name for simplicity.
 
 ![Create Realm App Step 1](/docs/create-realm-app-welcome.png?raw=true "Create Realm App Step 1")
