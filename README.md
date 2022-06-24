@@ -118,7 +118,7 @@ Click the Cluster name to open it. In your cluster on **Atlas** click the **Sear
 The index creation should take less tha a minute.
 Lets test it, to verify that it works.
 Still in the **Search** tab, click the **Query** button besides the newly created index.
-Enter the following querry to find all movies containing the text `time` in any text values.
+Enter the following querry to find all movies containing the text `time travel` in any text values.
 
 ```json
 { "$search": { "text": "time travel" } }
