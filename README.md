@@ -174,10 +174,10 @@ On the left side bar of the Atlas UI, within **Data Access**, click **Schema**. 
 Select just the **movies** collection, leave the sampling size as default and click the **Generate Schema** button.
 This will also generate all the neccessary types and queries for a **GraphQL** schema. Which can be used immediately to access the data through the GraphQL endpoint managed by App Services.
 
-![Realm Generate Schema](/docs/schema.png?raw=true "Realm Generate Schema")
+![Realm Generate Schema](/docs/schema-new.png?raw=true "Realm Generate Schema")
 
 
-![Realm Generate Schema](/docs/schema2.png?raw=true "Realm Generate Schema")
+![Realm Generate Schema](/docs/schema-new2.png?raw=true "Realm Generate Schema")
 
 Click the **Review Draft & Deploy** button at the top of the page and **Deploy** your changes.
 
