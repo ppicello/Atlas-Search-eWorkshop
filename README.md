@@ -171,7 +171,7 @@ On the left side bar of the Atlas UI, within **Data Access**, click **Rules**. *
 ### App Services Generate Schema
 
 On the left side bar of the Atlas UI, within **Data Access**, click **Schema**. **Schema** defines the data structures and types for documents in each collection in the databases. Select the **movies** collection within the **sample_mflix** database. Click the generate schema button.
-Select just the **movies** collection, leave the sampling size as default and click the **Generate Schema** button.
+Select just the **movies** collection, leave the sampling size as default and click the **Generate Schema** button and then **Save Draft**.
 This will also generate all the neccessary types and queries for a **GraphQL** schema. Which can be used immediately to access the data through the GraphQL endpoint managed by App Services.
 
 ![Realm Generate Schema](/docs/schema-new.png?raw=true "Realm Generate Schema")
@@ -185,7 +185,7 @@ Click the **Review Draft & Deploy** button at the top of the page and **Deploy**
 
 ![Deploy](/docs/hint-review-deploy.png?raw=true "Deploy")
 
-_Hint:_ Now with the schema generated you can update the `.env.local` file to include the following base URL from your App Services app.
+_Hint:_ Now with the schema generated you can update the `.env.local` file to include the following base URL from your App Services app. To get this on the left side bar of the Atlas UI within **Build**, click **GraphQL**. 
 
 ![Copy Realm Base URL](/docs/realm-base-url.png?raw=true "Copy Realm Base URL")
 
