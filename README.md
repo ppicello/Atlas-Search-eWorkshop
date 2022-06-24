@@ -177,7 +177,7 @@ This will also generate all the neccessary types and queries for a **GraphQL** s
 ![Realm Generate Schema](/docs/schema-new.png?raw=true "Realm Generate Schema")
 
 
-![Realm Generate Schema2](/docs/schema-new2.png?raw=true "Realm Generate Schema2")
+![Realm Generate Schema2](/docs/schema-new-2.png?raw=true "Realm Generate Schema2")
 
 Click the **Review Draft & Deploy** button at the top of the page and **Deploy** your changes.
 
