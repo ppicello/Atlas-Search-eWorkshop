@@ -134,7 +134,7 @@ The information should be populated automatically. Make sure to use the same nam
 ![Create Realm App Step 1](/docs/welcome-atlas-app-services.png?raw=true "Create Realm App Step 1")
 
 
-![Create Realm App Step 1.2](/docs/welcome-atlas-app-services.png?raw=true "Create Realm App Step 1.2")
+![Create Realm App Step 1.2](/docs/welcome-atlas-app-services2.png?raw=true "Create Realm App Step 1.2")
 
 In the following dialog, setup the name of the App, connect it to your newly created cluster and select a local (single region) deployment model. It should be preferable to use the region closest to your cluster region.
 
@@ -162,9 +162,9 @@ On the left side bar of the Atlas UI, within **Data Access**, click **Authentica
 
 ### App Services Configure Access Rules
 
-On the left side bar of the Atlas UI, within **Data Access**, click **Rules**. **Rules** provide you many ways to limit and configure data access per collection and user role, deep down to the document level. For this demo we will allow all users to only `read` all documents in the movies colelction. **App Services** provides templates for many scenarios and we will use the **Users can only read all data** template.
+On the left side bar of the Atlas UI, within **Data Access**, click **Rules**. **Rules** provide you many ways to limit and configure data access per collection and user role, deep down to the document level. For this demo we will allow all users to only `read` all documents in the movies colelction. **App Services** provides templates for many scenarios and we will use the **readAll** template role.
 
-![Realm Configure Access Rules](/docs/add-rules-movies.png?raw=true "Realm Configure Access Rules")
+![Realm Configure Access Rules](/docs/add-rules-movies-new.png?raw=true "Realm Configure Access Rules")
 
 <a id="RealmGenerateSchema"></a>
 
