@@ -15,7 +15,7 @@ Alternatively, you can open the project in your browser without any installation
 
 Open the project live on [StackBlitz](http://stackblitz.com/):
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/artemadams/atlas-search-mongoflix)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/ppicello/Atlas-Search-eWorkshop)
 
 Duplicate the file `.env.local.example-add-app-id-here` and name it: `.env.local`.
 You will need to change the `<APP_ID>` value to the app id of your Atlas app, which will be created at a later step.
